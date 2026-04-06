@@ -1,17 +1,33 @@
 Task 1: Understanding the Flow
 
-The email form works as follows: When a user visits the /formtest page, they see a form to enter an email and a list of previously saved emails retrieved from the session. Upon submitting the form via POST, the email is validated for format and constraints, then stored in the session array if valid, and the page redirects back to display the updated list with feedback messages. This creates a simple session-based email collection system where data persists across requests without a database.
+The email form works like this: Pag ang user muvisit sa /formtest page, 
+they see a form to nga ma enteran nilag email and a list sa kadtung nalista nga saved emails na retrieve sa session. 
+Pag submit nilas form gamit POST, ang email kay ma validate for format and constraints, 
+then I store sya sa session array if valid, ang page muredirect back to display sa updated list with feedback messages. 
+Mag create syag simple session-based email collection system where data persists across requests without a database. 
+(Dli klaro AI sir no bisaya man hahahaha sakpan ey)
 
 Questions and Answers:
 
 What's the difference between GET and POST?
-GET is used to request data from a server, like loading a page, and the data is sent in the URL. POST is used to send data to the server, like submitting a form, and the data is sent in the request body, so it's not visible in the URL.
+
+GET is used para mag request data sa server, like loading sa page, ug ang data kay ma send sa URL. 
+POST is used para mag send data to the server, like magsubmit sa form, and the data kay ma send sa request body, 
+so dili sya visible sa URL.
 
 Why do we use @csrf in forms?
-@csrf adds a hidden token to prevent Cross-Site Request Forgery attacks. It's Laravel's way of protecting forms from being submitted by malicious sites pretending to be the user.
+
+@csrf mag add sa hidden token para ma prevent ang mga Cross-Site Request Forgery attacks.
+It's Laravel's way of pagprotekta sa mga forms (Aww ka sweet) nga ma submitted sa mga malicious sites,
+nga nag pretending to be the user.
+
 
 What actually is the session that's used for in this activity?
-The session is like temporary storage on the server that remembers data between page requests. In this activity, it's used to store the list of emails so they persist as the user adds or removes them without needing a database.
+
+Temporary storage sya sa server sir nga ga remember sa data between page requests In this activity, 
+ginagamit sya to store tung (tung tung sahur) list of emails para mag persist sya as the user adds or removes them ,
+without needing a database. (Nga akong gi set up, bruh)
 
 What happens if the session is cleared?
-If the session is cleared, all the stored emails would be lost, and the list would be empty the next time you visit the page. It's like resetting the temporary memory.
+
+Wala sir, tangal tanan stored data bam. Impas.
